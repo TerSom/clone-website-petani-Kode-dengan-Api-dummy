@@ -1,0 +1,12 @@
+🔥📫🤩
+import bookImg from './assets/book.png';
+
+const App = () => {
+  return ( 
+    <div className="bg-amber-400 p-4">
+      <img src={bookImg} alt="Book" className="w-32 h-32" />
+    </div>
+  );
+}
+ 
+export default App;
