@@ -20,7 +20,7 @@ const App = () => {
         <Navbar></Navbar>
         <Hero></Hero>
         <CardKonten></CardKonten>
-        <div className="grid gap-5 mt-5 px-14 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1">
+        <div className="grid gap-5 mt-6 px-14 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1">
           {Api.map((item) => (
             <CardKontenApi
               key={item}
