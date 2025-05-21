@@ -15,14 +15,19 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center bg-slate-900 ">
+    <div className="flex justify-center items-center ">
       <div className="max-w-[1920px]">
         <Navbar></Navbar>
         <Hero></Hero>
         <CardKonten></CardKonten>
         <div className="grid gap-5 mt-5 px-14 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1">
           {Api.map((item) => (
-            <CardKontenApi key={item} title={item.title} body={item.body} id={item.id}></CardKontenApi>
+            <CardKontenApi
+              key={item}
+              title={item.title}
+              body={item.body}
+              id={item.id}
+            ></CardKontenApi>
           ))}
         </div>
         <Footer></Footer>
